@@ -6,9 +6,7 @@ while not valores:
     try:
         radio = float(radio)      
         if radio < 0:
-            print ("El valor del radio ingresado es un numero negativo, por favor, introduzca un numero valido ") 
+            print ("El valor del radio ingresado es un numero positivo, por favor, introduzca un numero valido ") 
         else:
-            valores = True 
-    except:  
-        print ("Uno o mas datos no son validos, solo se aceptan valores mayores a 0, porfavor, introduzca los datos nuevamente")
-print ("El volumen de su esfera es ", ( 4/3 * math.pi * (float(radio) ** 3)))
+            valores = False
+    
